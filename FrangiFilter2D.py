@@ -143,16 +143,13 @@ def FrangiFilter2D(I):
             outIm=ALLfiltered.max(2)
         else:
             outIm = (outIm.transpose()).reshape(I.shape)
-
-
+            
     return outIm
 
 if __name__ == "__main__":
-    path="/Users/zhangyiming/Desktop/data/"
-    imagename=path+'185'+'.tif'
+    imagename=‘your pic’s name‘
     image=cv2.imread(imagename,0)
     blood = cv2.normalize(image.astype('double'), None, 0.0, 1.0, cv2.NORM_MINMAX) # Convert to normalized floating point
-
     outIm=FrangiFilter2D(blood)
     img=outIm*(10000)
 
