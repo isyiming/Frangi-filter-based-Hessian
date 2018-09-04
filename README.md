@@ -1,5 +1,6 @@
 # Frangi-filter-based-Hessian
-Hessian、 eig2image and Frangi
+基于Hessian矩阵的Frangi滤波 python版本
+包括：Hessian、 eig2image and Frangi
 
 ![test image](https://github.com/yimingstyle/Frangi-filter-based-Hessian-/blob/master/Screenshots/test.tif)
 
